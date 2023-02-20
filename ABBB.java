@@ -40,7 +40,7 @@ public class ABBB {
 	/**
 	 * 
 	 * @param str
-	 * Here i have done like i removes all  AB's then again travel one more if any new AB's formed because of removal of
+	 * Here I have done like I removed all  AB's then again travel one more if any new AB's formed because of removal of
 	 * earlier AB's then it will remove. It will continue until all ABs got removed and then travel again to remove all BBS
 	 * This worked but got TLE
 	 */
@@ -59,12 +59,12 @@ public class ABBB {
 	 * 
 	 * @param str
 	 * @return
-	 * Here i am using stack because whenever you encounter B you can remove earlier element even if it is 'A' or 'B' because you
+	 * Here I am using stack because whenever you encounter B you can remove earlier element even if it is 'A' or 'B' because you
 	 * have to remove all 'BB' s and all 'AB's
 	 * 
-	 * so if stack is empty or if i get 'A' then pushing into stack
-	 * if it is B and stack is not empty popping so that it removes recent inserted element which form either BB or AB anything fine
-	 * so if we encounter B again pop so that it deletes newly  formed  AB or BB because of deletion of earlier one
+	 * so if stack is empty or if I get 'A' then pushing into the stack
+	 * if It is B and stack is not empty popping so that it removes recent inserted element which forms either BB or AB, anything fine
+	 * so If we encounter B again pop so that it deletes newly  formed  AB or BB because of deletion of earlier one
 	 */
 	public static int abbb_stack(String str) {
 		Stack<Character> stack = new Stack<Character>();
