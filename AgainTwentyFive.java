@@ -5,8 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 
- * @author Sravani A. Again Twenty Five! time limit per test0.5 seconds memory
+ * Problem Link:  https://codeforces.com/contest/630/problem/A
+ * @author Sravani
+ 	   Again Twenty Five! time limit per test0.5 seconds memory
  *         limit per test64 megabytes inputstandard input outputstandard output
  *         The HR manager was disappointed again. The last applicant failed the
  *         interview the same way as 24 previous ones. "Do I give such a hard
@@ -26,8 +27,8 @@ import java.io.InputStreamReader;
 
 /**
  * 
- * Solution : How many 5's you multiply last 2 digits of result will be always 25
- *
+ * Solution : No matter how many times you multiply 5 by 5, the last two digits of the result will always be 25.  
+ *	      
  */
 public class AgainTwentyFive {
 
