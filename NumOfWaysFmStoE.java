@@ -22,35 +22,24 @@ public class NumOfWaysFmStoE {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 	/**
-	 * I declared one static variable to increment whenever you reach the
-	 * destination.
-	 * 
-	 * Here, I have passed the distance to the recursive function that is equal to
-	 * the distance between the end point and the start point. while calling the
-	 * recursive function, decrement the d either by 1 or 2 or 3, so there are 3 paths for
-	 * every node. If I reach d = 0, I have arrived at my destination and am
-	 * incrementing the count by one because this is one of the paths; otherwise, I
-	 * return without incrementing, as it cannot be the path to reach a destination.
 	 * 
 	 */
-	public static void recursion(int d) {
-		if (d < 0)
-			return;
-		if (d == 0) {
-			count++;
-			return;
+	public static int recursion(int S,int E) {
+		if (S > E)
+			return 0;
+		if (S == E) {
+			
+			return 1;
 		}
-		recursion(d - 1);
-		recursion(d - 2);
-		recursion(d - 3);
+		return recursion(S+1,E)+recursion(S+2,E)+recursion(S+3,E);
 	}
 
 	public static void main(String args[]) throws NumberFormatException, IOException {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int S = Integer.parseInt(st.nextToken());
 		int E = Integer.parseInt(st.nextToken());
-		recursion(E - S);
-		System.out.println(count);
+		System.out.println(recursion(S,E));
+		
 	}
 
 }
